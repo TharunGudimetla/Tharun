@@ -1,0 +1,225 @@
+body{
+    background-color: snow;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(https://spiderimg.amarujala.com/assets/images/2020/04/29/750x506/lpu_1588148335.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    margin: 10px 10px;
+    display: flex;
+    padding: 1% 6%;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: transparent;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    font-family: sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: flex;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.place{
+    margin: 50px 100px;
+    display: flex;
+}
+
+.p1{
+    padding: 5px 5px;
+    text-align: center;
+    margin: 10px 40px;
+    background-color: antiquewhite;
+}
+p{
+    font-size: 30px;
+}
+.Img{
+    display: flex;
+}
+img{
+    margin-left: 50px;
+}
+.div{
+    margin: 10px 50px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    background-color: orangered;
+}
+.d1 h2{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.d2{
+    margin: 10px 10px;
+}
+h2{
+    margin-top:30px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.imgs{
+    margin:20px 0;
+}
+.footer{
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+}
+.footer h1{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.icons i{
+    margin: 10px 10px;
+    color: orangered;
+    cursor: pointer;
+    padding: 25px 0;
+    font-size: 40px;
+}
+.foot{
+    margin: 20px 40px;
+    font-size: 30px;
+}
+.about a{
+    color: white;
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 20px 25px;
+}
+.About {
+    margin: 20px 40px;
+    background-color: #064089;
+    padding: 20px 40px;
+}
+.About1{
+    padding: 20px 40px;
+    display: flex;
+}
+.c2 p{
+    margin: 20px 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.c2 img{
+    margin: 10px 20px;
+}
+.c4{
+    margin-top: 70px;
+    margin-left: 550px;
+    display: flex;
+}
+.c3{
+    color: lightcyan;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+hr{
+    margin: 10px 20px;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.c3 p{
+    color: white;
+    font-size: 30px;
+}
+.book-showcase {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.book-slider {
+    display: flex;
+    width: 300%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.book-slide {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 33.333%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.book {
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.navigation-dots {
+    text-align: center;
+    margin: -30px 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot:target,
+#slide1:target ~ .navigation-dots .dot:nth-child(1),
+#slide2:target ~ .navigation-dots .dot:nth-child(2),
+#slide3:target ~ .navigation-dots .dot:nth-child(3) {
+    background-color: #4CAF50;
+}
+
+#slide1:target ~ .book-showcase .book-slider { transform: translateX(0); }
+#slide2:target ~ .book-showcase .book-slider { transform: translateX(-33.333%); }
+#slide3:target ~ .book-showcase .book-slider { transform: translateX(-66.666%); }

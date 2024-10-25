@@ -1,0 +1,179 @@
+body{
+    background-color:snow;
+    margin: 10px 10px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(https://spiderimg.amarujala.com/assets/images/2020/04/29/750x506/lpu_1588148335.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    margin: 10px 10px;
+    display: flex;
+    padding:1% 6%;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: transparent;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    font-family: sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: flex;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+h1{
+    margin: 20px 20px;
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+p{
+    margin: 10px 40px;
+    color:black;
+    font-size: 30px;
+}
+.lpu{
+    margin:30px 70px;
+    padding: 30px 50px;
+    background-color: rgb(226, 112, 13);
+}
+h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: orangered;
+    margin: 30px 20px;
+}
+.Certifications{
+    margin: 10px 40px;
+    display: flex;
+}
+.c1 li{
+    font-size: 30px;
+}
+.c1{
+    margin: 10px 0px;
+}
+.c1 p{
+    font-size: 30px;
+}
+.place{
+    margin: 10px 300px;
+    display: flex;
+}
+.p1 p{
+    font-size: 30px;
+}
+.p1{
+    margin: 10px 40px;
+    background-color: antiquewhite;
+    border: 1px solid wheat;
+    box-shadow:20px 20px 20px 0  ;
+    padding: 20px 50px;
+}
+.r1{
+    margin: 30px 40px;
+    background-color: antiquewhite;
+    border: 1px solid wheat;
+    box-shadow:0 0 20px  ;
+    padding: 20px 50px;
+}
+ul li{
+font-size: 30px;
+}
+.footer{
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+}
+.footer h1{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.icons i{
+    margin: 10px 10px;
+    color: orangered;
+    cursor: pointer;
+    padding: 25px 0;
+    font-size: 40px;
+}
+.foot{
+    margin: 20px 40px;
+    font-size: 30px;
+}
+.about a{
+    color: white;
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 20px 25px;
+}
+.About {
+    margin: 20px 40px;
+    background-color: #064089;
+    padding: 20px 40px;
+}
+.About1{
+    padding: 20px 40px;
+    display: flex;
+}
+.c2 p{
+    margin: 20px 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.c2 img{
+    margin: 10px 20px;
+}
+.c4{
+    margin-top: 70px;
+    margin-left: 200px;
+    display: flex;
+}
+.c3{
+    color: lightcyan;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+hr{
+    margin: 10px 20px;
+}
+.c3 p{
+    color: white;
+    font-size: 30px;
+}
